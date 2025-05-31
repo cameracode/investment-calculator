@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "A React-based investment calculator built with TypeScript",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env PORT=3001 react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "test:e2e": "playwright test",
-    "start:with-tests": "concurrently \"npm:start\" \"npm:run-tests-after-start\"",
+    "start:with-tests": "concurrently \"npm run start\" \"npm run run-tests-after-start\"",
     "run-tests-after-start": "wait-on http://localhost:3001 && npm test && npm run test:e2e",
     "eject": "react-scripts eject"
   },
