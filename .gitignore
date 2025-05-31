@@ -24,4 +24,7 @@ yarn-error.log*
 coverage/
 
 # OS
-Thumbs.db 
+Thumbs.db
+
+# last run
+.last-run.json 

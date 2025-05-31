@@ -13,6 +13,7 @@ A React-based investment calculator built with TypeScript and Tailwind CSS. Easi
 - TypeScript
 - Tailwind CSS
 - Jest & React Testing Library
+- Playwright (end-to-end testing)
 - Create React App (CRA)
 
 ## Recommended Editor Extension
@@ -43,10 +44,24 @@ npm start
 ```
 The app will be available at [http://localhost:3001](http://localhost:3001)
 
-### Running Tests
-```sh
-npm test
-```
+## Testing
+
+### Unit & Component Tests (Jest)
+- **Location:** `src/__tests__/`
+- **How to run:**
+  ```sh
+  npm test
+  ```
+- Uses Jest and React Testing Library for fast, isolated tests of components and logic.
+
+### End-to-End Tests (Playwright)
+- **Location:** `playwright/`
+- **How to run:**
+  ```sh
+  npx playwright test
+  ```
+- Simulates real user interactions in a browser for full app flows.
+- Make sure your app is running locally before running Playwright tests.
 
 ## Project Structure
 ```
@@ -54,9 +69,11 @@ src/
   components/         # React components (form, results table, etc.)
   services/           # Investment calculation logic
   models/             # TypeScript types
+  __tests__/          # Jest unit/component tests
   App.tsx             # Main app component
   index.tsx           # Entry point
   index.css           # Tailwind CSS imports
+playwright/           # Playwright end-to-end tests
 ```
 
 ## Customization
