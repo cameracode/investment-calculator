@@ -46,22 +46,32 @@ The app will be available at [http://localhost:3001](http://localhost:3001)
 
 ## Testing
 
-### Unit & Component Tests (Jest)
-- **Location:** `src/__tests__/`
-- **How to run:**
+You can run tests **manually** or automatically after starting the app:
+
+### Manual Test Workflow
+- **Unit & Component Tests (Jest):**
   ```sh
   npm test
   ```
-- Uses Jest and React Testing Library for fast, isolated tests of components and logic.
-
-### End-to-End Tests (Playwright)
-- **Location:** `playwright/`
-- **How to run:**
+- **End-to-End Tests (Playwright):**
   ```sh
   npx playwright test
   ```
-- Simulates real user interactions in a browser for full app flows.
-- Make sure your app is running locally before running Playwright tests.
+  (Make sure your app is running locally before running Playwright tests.)
+
+### Automatic Test Workflow
+- Start the app and run all tests automatically:
+  ```sh
+  npm run start:with-tests
+  ```
+  This will:
+  - Start the dev server on port 3001
+  - Wait for the server to be ready
+  - Run all Jest and Playwright tests
+
+### Test Locations
+- **Jest tests:** `src/__tests__/`
+- **Playwright tests:** `playwright/`
 
 ## Project Structure
 ```
