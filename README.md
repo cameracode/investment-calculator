@@ -15,6 +15,17 @@ A React-based investment calculator built with TypeScript and Tailwind CSS. Easi
 - Jest & React Testing Library
 - Create React App (CRA)
 
+## Recommended Editor Extension
+
+For the best development experience with Tailwind CSS, install the **Tailwind CSS IntelliSense** extension:
+
+- [Tailwind CSS IntelliSense for VS Code](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+This extension provides:
+- Autocomplete for Tailwind classes
+- Linting and highlighting for Tailwind directives (removes "Unknown at rule @tailwind" warnings)
+- Hover previews and more
+
 ## Getting Started
 
 ### Prerequisites
