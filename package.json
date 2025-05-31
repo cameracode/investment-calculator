@@ -6,8 +6,8 @@
     "start": "cross-env PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "eject": "react-scripts eject"
   },
   "keywords": [
     "typescript",
