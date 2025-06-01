@@ -32,15 +32,15 @@ export class InvestmentCalculator {
         const annualResults: InvestmentResult[] = [];
 
         for (let i = 0; i < duration; i++) {
-            total = total * (1 + expectedReturn); // Apply annual return
-            totalContributions += annualContribution; // Increment contributions correctly
-            totalInterestEarned = total - totalContributions - initialAmount; // Calculate interest earned
-            total = total + annualContribution; // Add annual contribution to total
+            total = total + annualContribution;      // Add contribution first
+            totalContributions += annualContribution;
+            total = total * (1 + expectedReturn);    // Then apply return
+            totalInterestEarned = total - totalContributions - initialAmount;
 
             annualResults.push({
                 year: `Year ${i + 1}`,
                 totalAmount: total,
-                totalInterestEarned: Math.max(totalInterestEarned, 0), // Ensure interest earned is not negative
+                totalInterestEarned: Math.max(totalInterestEarned, 0),
                 totalContributions: totalContributions
             });
         }
