@@ -92,3 +92,14 @@ playwright/           # Playwright end-to-end tests
 
 ## License
 ISC 
+
+**Note:** Annual contributions are added at the beginning of each year, and then the annual return is applied. This matches the standard approach for investment growth calculators. 
+
+### Example Calculation
+
+- Initial Amount: $5000
+- Annual Contribution: $500
+- Expected Return: 8%
+- Duration: 10 years
+
+**Year 1 Total Amount:** $5940.00 
